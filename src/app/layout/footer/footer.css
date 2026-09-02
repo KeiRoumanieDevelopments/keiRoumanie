@@ -1,0 +1,74 @@
+:host {
+  display: block;
+}
+
+.site-footer {
+  padding-block: 2.5rem 1.25rem;
+  border-top: 1px solid rgb(212 166 58 / 20%);
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.footer-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.brand {
+  color: var(--color-white);
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.brand span {
+  color: var(--color-gold);
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  color: var(--color-gold);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-navigation {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+}
+
+.footer-navigation a {
+  width: fit-content;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer-navigation a:hover {
+  color: var(--color-gold);
+}
+
+.copyright {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(255 255 255 / 12%);
+}
+
+.copyright p {
+  margin: 0;
+  color: rgb(255 255 255 / 70%);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 48rem) {
+  .footer-content {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+
+  .footer-navigation {
+    grid-template-columns: repeat(4, auto);
+    gap: 1.5rem;
+  }
+}

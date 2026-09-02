@@ -1,0 +1,35 @@
+<header class="site-header">
+  <div class="navbar container">
+    <a class="brand" routerLink="/" aria-label="Kei.Roumanie — Accueil" (click)="closeMenu()">
+      <span>Kei</span>.Roumanie
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Ouvrir ou fermer le menu"
+      aria-controls="main-navigation"
+      [attr.aria-expanded]="menuOpen()"
+      (click)="toggleMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav
+      id="main-navigation"
+      class="navigation"
+      aria-label="Navigation principale"
+      [class.navigation--open]="menuOpen()"
+    >
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">
+        Accueil
+      </a>
+      <a routerLink="/a-propos" routerLinkActive="active" (click)="closeMenu()">À propos</a>
+      <a routerLink="/roumanie" routerLinkActive="active" (click)="closeMenu()">La Roumanie</a>
+      <a routerLink="/tarifs" routerLinkActive="active" (click)="closeMenu()">Tarifs</a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+    </nav>
+  </div>
+</header>
