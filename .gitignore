@@ -12,6 +12,7 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
+.cursor/
 .idea/
 .project
 .classpath
@@ -29,6 +30,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
+PreCreationContent/
 /.angular/cache
 .sass-cache/
 /connect.lock

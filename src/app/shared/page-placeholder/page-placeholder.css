@@ -1,0 +1,55 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+.construction {
+  display: grid;
+  width: 100%;
+  min-height: 32rem;
+  place-items: center;
+  padding-block: 5rem;
+  background:
+    radial-gradient(circle at 50% 40%, rgb(212 166 58 / 9%), transparent 35rem),
+    var(--color-navy);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.brand {
+  margin-bottom: 0.15rem;
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.page-name {
+  margin-bottom: 1rem;
+  color: rgb(255 255 255 / 72%);
+  font-size: 1rem;
+}
+
+h1 {
+  max-width: 11ch;
+  margin: 0 auto;
+  color: var(--color-gold);
+  font-size: clamp(3rem, 13vw, 6.5rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.divider {
+  display: block;
+  width: 3.5rem;
+  height: 1px;
+  margin: 2rem auto;
+  background: var(--color-gold);
+}
+
+.tagline {
+  margin: 0;
+  color: rgb(255 255 255 / 75%);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}

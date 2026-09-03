@@ -1,0 +1,65 @@
+.pack-card {
+  display: flex;
+  min-height: 21rem;
+  flex-direction: column;
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--color-navy);
+  color: rgb(255 255 255 / 82%);
+  box-shadow: 0 0.75rem 2rem rgb(7 26 45 / 7%);
+}
+
+.pack-card--featured {
+  border-color: var(--color-gold);
+  background: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.pack-card__badge {
+  width: fit-content;
+  margin-bottom: 1.25rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: var(--color-navy);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pack-card__name {
+  margin-bottom: 0.25rem;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pack-card__price {
+  margin-bottom: 1.25rem;
+  color: var(--color-gold);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pack-card--featured .pack-card__name,
+.pack-card--featured .pack-card__price {
+  color: var(--color-navy);
+}
+
+.pack-card .text-link {
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+.pack-card .text-link,
+.pack-card .text-link span {
+  color: var(--color-gold);
+}
+
+.pack-card--featured .text-link,
+.pack-card--featured .text-link span {
+  color: var(--color-navy);
+}
