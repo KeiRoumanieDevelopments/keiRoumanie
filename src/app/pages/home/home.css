@@ -6,8 +6,7 @@
 .hero {
   padding-block: 4rem;
   background:
-    radial-gradient(circle at 85% 30%, rgb(212 166 58 / 10%), transparent 26rem),
-    var(--color-navy);
+    radial-gradient(circle at 85% 30%, rgb(212 166 58 / 10%), transparent 26rem), var(--color-navy);
   color: var(--color-white);
 }
 
@@ -90,6 +89,12 @@
   font-size: clamp(2.25rem, 7vw, 3.75rem);
   font-weight: 600;
   letter-spacing: -0.02em;
+}
+
+/* Grande typo en colonne étroite : césure, sinon coupe forcée plutôt qu'un débordement. */
+.introduction__content h2 {
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .introduction__text {
@@ -209,11 +214,6 @@
     padding-block: 5.5rem;
   }
 
-  .introduction__content {
-    grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr);
-    gap: 4rem;
-  }
-
   .packs-grid {
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
@@ -221,6 +221,11 @@
 }
 
 @media (min-width: 64rem) {
+  .introduction__content {
+    grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr);
+    gap: 4rem;
+  }
+
   .hero__content {
     grid-template-columns: minmax(0, 1.05fr) minmax(24rem, 0.95fr);
     gap: 5rem;

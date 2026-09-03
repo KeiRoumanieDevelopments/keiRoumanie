@@ -6,8 +6,7 @@
 .about-hero {
   padding-block: 5rem;
   background:
-    radial-gradient(circle at 80% 25%, rgb(212 166 58 / 10%), transparent 25rem),
-    var(--color-navy);
+    radial-gradient(circle at 80% 25%, rgb(212 166 58 / 10%), transparent 25rem), var(--color-navy);
   color: rgb(255 255 255 / 80%);
 }
 
@@ -15,8 +14,9 @@
   max-width: 58rem;
 }
 
+/* L'eyebrow contient la marque : seul « Kei » doit rester doré. */
 .about-hero .section-label {
-  color: var(--color-gold);
+  color: inherit;
 }
 
 .about-hero h1 {
@@ -51,6 +51,12 @@
   font-size: clamp(2.25rem, 7vw, 3.75rem);
   font-weight: 600;
   letter-spacing: -0.02em;
+}
+
+/* Grande typo en colonne étroite : césure, sinon coupe forcée plutôt qu'un débordement. */
+.agency__intro h2 {
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .agency__text {
@@ -92,7 +98,7 @@
 
 .profile__portrait {
   position: relative;
-  width: min(100%, 30rem);
+  width: clamp(13rem, 68vw, 18rem);
   margin: 0 auto;
 }
 
@@ -107,9 +113,8 @@
 .profile__portrait img {
   position: relative;
   width: 100%;
-  aspect-ratio: 9 / 16;
+  height: auto;
   border-radius: var(--radius-small);
-  object-fit: cover;
 }
 
 .team {
@@ -250,11 +255,6 @@
 }
 
 @media (min-width: 48rem) {
-  .agency__intro {
-    grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr);
-    gap: 4rem;
-  }
-
   .profile__content {
     grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
     align-items: stretch;
@@ -269,12 +269,17 @@
     position: absolute;
     inset: 0;
     height: 100%;
-    aspect-ratio: auto;
+    object-fit: cover;
     object-position: center top;
   }
 }
 
 @media (min-width: 64rem) {
+  .agency__intro {
+    grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr);
+    gap: 4rem;
+  }
+
   .mission__steps {
     grid-template-columns: repeat(4, 1fr);
   }
