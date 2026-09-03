@@ -86,6 +86,10 @@ h3 {
   line-height: 1.1;
 }
 
+.brand-name__kei {
+  color: var(--color-gold);
+}
+
 .container {
   width: min(100% - (2 * var(--page-padding)), var(--container-width));
   margin-inline: auto;
