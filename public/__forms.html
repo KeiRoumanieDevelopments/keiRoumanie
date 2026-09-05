@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Détection des formulaires Netlify</title>
+  </head>
+  <body>
+    <!--
+      Netlify ne détecte les formulaires qu'en analysant le HTML statique au moment du build.
+      Les pages Angular étant rendues par la fonction SSR, elles ne sont jamais analysées :
+      ce fichier sert de déclaration et de cible du POST. Les noms de champs doivent rester
+      strictement identiques à ceux de src/app/pages/contact/contact.html.
+    -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input name="prenom" />
+      <input name="nom" />
+      <input type="email" name="email" />
+      <input name="telephone" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>

@@ -1,1 +1,120 @@
-<app-page-placeholder pageName="Contact" />
+<section class="contact-hero">
+  <div class="contact-hero__content container">
+    <p class="section-label">Contact</p>
+    <h1>Parlons de votre projet</h1>
+    <p>
+      Vous souhaitez en savoir plus sur nos services ou démarrer votre projet d’études en Roumanie ?
+    </p>
+    <p>
+      Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner
+      dans chaque étape de votre démarche.
+    </p>
+    <a class="text-link" routerLink="/tarifs">Voir nos packs <span>→</span></a>
+  </div>
+</section>
+
+<section class="section coordinates">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-label">Nous joindre</p>
+      <h2>Par le canal qui vous arrange</h2>
+    </div>
+
+    <ul class="coordinates-grid">
+      <li>
+        <h3>Email</h3>
+        <a href="mailto:Keiroumanie@gmail.com">Keiroumanie&#64;gmail.com</a>
+        <p>Pour toute question sur nos accompagnements ou votre candidature.</p>
+      </li>
+      <li>
+        <h3>Téléphone et WhatsApp</h3>
+        <a href="tel:+33676198870">+33 (0)6 76 19 88 70</a>
+        <a href="https://wa.me/33676198870" target="_blank" rel="noopener noreferrer">
+          Écrire sur WhatsApp
+        </a>
+        <p>Un échange direct, du lundi au vendredi.</p>
+      </li>
+      <li>
+        <h3>Instagram</h3>
+        <a href="https://www.instagram.com/kei.roumanie/" target="_blank" rel="noopener noreferrer">
+          &#64;kei.roumanie
+        </a>
+        <p>Nos actualités et le quotidien des étudiants en Roumanie.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section form-section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-label">Formulaire</p>
+      <h2>Écrivez-nous</h2>
+      <p>Vous pouvez également remplir le formulaire ci-dessous.</p>
+    </div>
+
+    @if (status() === 'sent') {
+      <p class="form-alert" role="status">
+        Merci, votre message a bien été envoyé. Nous revenons vers vous dès que possible.
+      </p>
+    }
+
+    @if (status() === 'error') {
+      <p class="form-alert form-alert--error" role="alert">
+        L’envoi a échoué. Réessayez dans un instant ou écrivez-nous directement à
+        <a href="mailto:Keiroumanie@gmail.com">Keiroumanie&#64;gmail.com</a>.
+      </p>
+    }
+
+    <form
+      class="contact-form"
+      name="contact"
+      method="post"
+      action="/__forms.html"
+      (submit)="submit($event)"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+
+      <p class="contact-form__honeypot">
+        <label>
+          Ne remplissez pas ce champ
+          <input name="bot-field" tabindex="-1" autocomplete="off" />
+        </label>
+      </p>
+
+      <div class="contact-form__row">
+        <p class="field">
+          <label for="prenom">Prénom</label>
+          <input id="prenom" name="prenom" type="text" autocomplete="given-name" required />
+        </p>
+        <p class="field">
+          <label for="nom">Nom</label>
+          <input id="nom" name="nom" type="text" autocomplete="family-name" required />
+        </p>
+      </div>
+
+      <p class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+      </p>
+
+      <p class="field">
+        <label for="telephone">Téléphone <span class="field__hint">(facultatif)</span></label>
+        <input id="telephone" name="telephone" type="tel" autocomplete="tel" />
+      </p>
+
+      <p class="field">
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </p>
+
+      <button class="button" type="submit" [disabled]="status() === 'sending'">
+        {{ status() === 'sending' ? 'Envoi en cours…' : 'Envoyer' }}
+      </button>
+
+      <p class="contact-form__notice">
+        Vos informations sont utilisées uniquement pour répondre à votre demande.
+      </p>
+    </form>
+  </div>
+</section>
