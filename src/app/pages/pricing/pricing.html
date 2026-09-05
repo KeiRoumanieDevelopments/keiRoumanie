@@ -1,1 +1,445 @@
-<app-page-placeholder pageName="Tarifs" />
+<section class="pricing-hero">
+  <div class="pricing-hero__content container">
+    <p class="section-label">Nos offres</p>
+    <h1>Un accompagnement adapté à votre projet</h1>
+    <p>
+      Chez <span class="brand-name__kei">Kei</span>.Roumanie, nous vous proposons un accompagnement
+      complet, personnalisé et adapté à votre projet d’études. Notre objectif est simple : vous
+      permettre de vous concentrer sur votre projet et votre future installation en Roumanie,
+      pendant que nous vous accompagnons dans les différentes étapes de votre candidature.
+    </p>
+  </div>
+</section>
+
+<section class="section packs">
+  <div class="container">
+    <div class="packs-grid">
+      <article class="pack-card">
+        <p class="pack-card__name">Essentiel</p>
+        <p class="pack-card__price">40 €</p>
+        <p>
+          Une consultation personnalisée pour échanger sur votre projet et définir vos prochaines
+          étapes.
+        </p>
+        <a class="text-link" [routerLink]="[]" fragment="essentiel">
+          Voir le détail <span>→</span>
+        </a>
+      </article>
+
+      <article class="pack-card pack-card--featured">
+        <p class="pack-card__badge">Formule complète</p>
+        <p class="pack-card__name">Accompagnement</p>
+        <p class="pack-card__price">2 000 €</p>
+        <p>Un suivi approfondi, de la stratégie de candidature jusqu’à votre inscription.</p>
+        <a class="text-link" [routerLink]="[]" fragment="accompagnement">
+          Voir le détail <span>→</span>
+        </a>
+      </article>
+
+      <article class="pack-card">
+        <p class="pack-card__name">Sérénité</p>
+        <p class="pack-card__price">2 500 €</p>
+        <p>
+          Le pack Accompagnement complété par la préparation aux examens et votre installation sur
+          place.
+        </p>
+        <a class="text-link" [routerLink]="[]" fragment="serenite">
+          Voir le détail <span>→</span>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section pack-detail" id="essentiel">
+  <div class="container">
+    <div class="pack-detail__head">
+      <p class="section-label">Pack Essentiel</p>
+      <h2>Consultation personnalisée</h2>
+      <p class="pack-detail__price">40 €</p>
+      <p>
+        Bénéficiez d’un entretien individuel avec notre équipe afin d’échanger sur votre projet
+        d’études en Roumanie.
+      </p>
+      <p>
+        Lors de cette première consultation, nous prenons le temps de comprendre votre parcours, vos
+        objectifs et vos attentes, puis de répondre à vos principales questions concernant les
+        universités, les filières, les modalités d’admission et la vie étudiante en Roumanie.
+      </p>
+      <p>
+        Cette première rencontre vous permet d’obtenir des informations claires et adaptées à votre
+        situation afin de mieux définir les prochaines étapes de votre projet.
+      </p>
+    </div>
+
+    <ol class="service-list">
+      <li>
+        <h3>Consultation par téléphone</h3>
+        <p>Un échange individuel avec notre équipe, à distance.</p>
+      </li>
+      <li>
+        <h3>Suivi en visioconférence</h3>
+        <p>Possible selon la formule choisie.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section pack-detail pack-detail--alt" id="accompagnement">
+  <div class="container">
+    <div class="pack-detail__head">
+      <p class="section-label">Pack Accompagnement</p>
+      <h2>L’accompagnement complet pour construire et sécuriser votre projet</h2>
+      <p class="pack-detail__price">2 000 €</p>
+      <p>
+        En complément du Pack Essentiel, le Pack Accompagnement vous permet de bénéficier d’un suivi
+        plus approfondi, de la stratégie de candidature jusqu’à votre inscription.
+      </p>
+    </div>
+
+    <ol class="service-list">
+      <li>
+        <h3>Stratégie de candidature personnalisée</h3>
+        <p>
+          Nous analysons votre profil, votre parcours académique et vos objectifs afin d’élaborer
+          une stratégie d’orientation vers les universités les plus adaptées à votre situation et
+          d’optimiser votre candidature.
+        </p>
+      </li>
+      <li>
+        <h3>Orientation et analyse des universités</h3>
+        <p>
+          Nous vous présentons les différentes possibilités d’études, les critères d’admission, les
+          modalités de candidature et les spécificités des établissements afin de vous aider à faire
+          un choix éclairé.
+        </p>
+      </li>
+      <li>
+        <h3>Accompagnement pour l’année préparatoire</h3>
+        <p>
+          Nous vous informons et vous accompagnons dans les démarches liées à l’année préparatoire,
+          notamment pour les formations permettant de renforcer votre niveau de roumain avant
+          l’intégration d’un cursus universitaire.
+        </p>
+      </li>
+      <li>
+        <h3>Dépôt et envoi du dossier</h3>
+        <p>
+          Nous prenons en charge la préparation finale et l’envoi de votre dossier de candidature
+          auprès des établissements sélectionnés, selon les modalités prévues par votre pack.
+        </p>
+      </li>
+      <li>
+        <h3>Explication complète de la procédure</h3>
+        <p>
+          Vous bénéficiez d’une présentation claire de chaque étape de la candidature, des documents
+          à fournir jusqu’à la décision d’admission, afin de savoir précisément où vous en êtes.
+        </p>
+      </li>
+      <li>
+        <h3>Suivi administratif</h3>
+        <p>
+          Nous assurons le suivi de votre dossier tout au long de la procédure et vous informons des
+          éventuelles demandes ou informations transmises par les établissements.
+        </p>
+      </li>
+      <li>
+        <h3>Assistance à l’inscription</h3>
+        <p>
+          Une fois votre admission obtenue, nous vous accompagnons dans les dernières démarches
+          nécessaires à votre inscription.
+        </p>
+      </li>
+      <li>
+        <h3>Conservation et suivi de vos documents</h3>
+        <p>
+          Nous organisons et conservons les documents nécessaires à votre dossier pendant la durée
+          de notre accompagnement, afin de faciliter leur suivi et de vous permettre de disposer
+          d’un dossier structuré et prêt pour les différentes étapes de votre candidature.
+        </p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section pack-detail" id="serenite">
+  <div class="container">
+    <div class="pack-detail__head">
+      <p class="section-label">Pack Sérénité</p>
+      <h2>L’accompagnement renforcé jusqu’à votre installation</h2>
+      <p class="pack-detail__price">2 500 €</p>
+      <p>
+        Le Pack Sérénité comprend l’ensemble des services du Pack Accompagnement, avec un
+        accompagnement supplémentaire dédié à votre préparation aux examens et à votre installation
+        en Roumanie.
+      </p>
+    </div>
+
+    <ol class="service-list">
+      <li>
+        <h3>Préparation aux examens d’admission</h3>
+        <p>
+          Nous vous accompagnons dans votre préparation aux épreuves écrites d’admission, avec des
+          conseils méthodologiques et des ressources adaptées aux exigences des établissements.
+        </p>
+      </li>
+      <li>
+        <h3>Applications et outils d’entraînement</h3>
+        <p>
+          Accédez à des outils et applications d’entraînement pour vous permettre de vous exercer
+          régulièrement, de vous familiariser avec le format des épreuves et de suivre votre
+          progression.
+        </p>
+      </li>
+      <li>
+        <h3>Recherche de logement</h3>
+        <p>
+          Avant ou après votre admission, nous vous accompagnons dans la recherche de votre logement
+          selon votre budget, vos critères et votre ville d’études. Nous vous transmettons des
+          propositions adaptées et pouvons vous accompagner dans l’organisation des visites.
+        </p>
+      </li>
+      <li>
+        <h3>Accueil à l’aéroport</h3>
+        <p>
+          À votre arrivée en Roumanie, nous pouvons vous accueillir à l’aéroport et vous accompagner
+          jusqu’à votre domicile, selon les modalités prévues dans le pack.
+        </p>
+      </li>
+      <li>
+        <h3>Un accompagnement jusqu’à votre installation</h3>
+        <p>
+          Avec le Pack Sérénité, vous ne vous arrêtez pas à l’admission : nous vous accompagnons
+          également dans les premières étapes de votre installation et de votre nouvelle vie
+          étudiante en Roumanie.
+        </p>
+      </li>
+    </ol>
+
+    <p class="pack-detail__quote">
+      Votre admission est une étape. Votre installation et votre réussite sont notre priorité.
+    </p>
+  </div>
+</section>
+
+<section class="section common">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-label">Le socle commun</p>
+      <h2>Ce que comprend notre accompagnement</h2>
+      <p>
+        Ces prestations structurent chaque dossier que nous prenons en charge, quelle que soit la
+        formule d’accompagnement retenue.
+      </p>
+    </div>
+
+    <div class="common-grid">
+      <article>
+        <h3>Orientation et stratégie de candidature</h3>
+        <p>
+          Nous étudions votre parcours scolaire, votre profil et vos objectifs afin de vous orienter
+          vers les établissements et les formations les plus adaptés à votre situation.
+        </p>
+      </article>
+      <article>
+        <h3>Constitution de votre dossier</h3>
+        <p>
+          Rassemblement des pièces nécessaires, organisation des documents, création ou optimisation
+          de votre CV et rédaction de votre lettre de motivation.
+        </p>
+      </article>
+      <article>
+        <h3>Traductions officielles</h3>
+        <p>
+          Nous travaillons avec des traducteurs habilités afin de vous permettre de présenter vos
+          documents dans le respect des exigences administratives et universitaires roumaines.
+        </p>
+      </article>
+      <article>
+        <h3>Vérification complète du dossier</h3>
+        <p>
+          Avant son envoi, nous effectuons une vérification approfondie afin de nous assurer que les
+          documents demandés sont présents, correctement préparés et conformes aux exigences
+          communiquées par l’université.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section compare">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-label">Tableau comparatif</p>
+      <h2>Accompagnement ou Sérénité ?</h2>
+      <p>
+        Les deux formules partagent le même socle administratif. Le Pack Sérénité y ajoute la
+        préparation aux épreuves et votre installation sur place.
+      </p>
+    </div>
+
+    <div class="compare__scroll">
+      <table class="compare__table">
+        <caption class="sr-only">
+          Comparaison des prestations incluses dans le Pack Accompagnement et le Pack Sérénité
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Prestation</th>
+            <th scope="col">Accompagnement<span>2 000 €</span></th>
+            <th scope="col">Sérénité<span>2 500 €</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Consultation personnalisée</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Stratégie de candidature personnalisée</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Orientation et analyse des universités</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Constitution du dossier</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Traductions officielles</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Vérification complète du dossier</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Accompagnement pour l’année préparatoire</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Dépôt et envoi du dossier</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Explication complète de la procédure</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Suivi administratif</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Assistance à l’inscription</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Conservation et suivi de vos documents</th>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Préparation aux examens d’admission</th>
+            <td class="compare__no">
+              <span aria-hidden="true">—</span><span class="sr-only">Non inclus</span>
+            </td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Applications et outils d’entraînement</th>
+            <td class="compare__no">
+              <span aria-hidden="true">—</span><span class="sr-only">Non inclus</span>
+            </td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Recherche de logement</th>
+            <td class="compare__no">
+              <span aria-hidden="true">—</span><span class="sr-only">Non inclus</span>
+            </td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Accueil à l’aéroport</th>
+            <td class="compare__no">
+              <span aria-hidden="true">—</span><span class="sr-only">Non inclus</span>
+            </td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Accompagnement jusqu’à l’installation</th>
+            <td class="compare__no">
+              <span aria-hidden="true">—</span><span class="sr-only">Non inclus</span>
+            </td>
+            <td><span aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section audience">
+  <div class="audience__content container">
+    <div>
+      <p class="section-label">À qui s’adresse notre accompagnement ?</p>
+      <h2>Vous reconnaissez-vous ?</h2>
+    </div>
+    <ul class="audience__list">
+      <li>Vous travaillez ou étudiez déjà et manquez de temps pour gérer toutes vos démarches.</li>
+      <li>Vous avez peur d’oublier un document ou de commettre une erreur dans votre dossier.</li>
+      <li>
+        Vous ne souhaitez pas avoir à rechercher vous-même les traducteurs et les différentes
+        démarches administratives.
+      </li>
+      <li>
+        Vous souhaitez être accompagné(e) par une équipe qui vous aide à préparer un dossier
+        organisé et conforme aux exigences de votre candidature.
+      </li>
+      <li>
+        Vous souhaitez bénéficier d’un accompagnement avant, pendant et, selon le pack choisi, après
+        votre inscription.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section exclusions">
+  <div class="container">
+    <div class="exclusions__note">
+      <p class="section-label">Universités non prises en charge</p>
+      <p>
+        Afin de garantir la qualité de notre accompagnement,
+        <span class="brand-name__kei">Kei</span>.Roumanie ne prend actuellement pas en charge les
+        candidatures en médecine, chirurgie dentaire et pharmacie dans les universités de
+        Cluj-Napoca.
+      </p>
+      <p>Nous ne prenons également pas en charge les inscriptions dans les universités de Iași.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section pricing-cta">
+  <div class="pricing-cta__content container">
+    <p class="section-label">Une question sur les packs ?</p>
+    <h2>Échangeons sur la formule adaptée à votre projet</h2>
+    <p>
+      Nous répondons à vos questions sur les formules, les modalités de règlement et les prochaines
+      étapes de votre candidature.
+    </p>
+    <a class="button" routerLink="/contact">Prendre contact</a>
+  </div>
+</section>
